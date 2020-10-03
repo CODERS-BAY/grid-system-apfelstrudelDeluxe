@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    margin: 0;
+}
+
+a {
+   color: white;
+   text-decoration: none; 
+   text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px black;
+}
+
+h2 {
+    color:  rgb(61, 37, 10);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    color: white;
+    background-color: rgb(61, 37, 10);
+    text-transform: uppercase;
+    display: table;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* --------------------header------------------- */
+
+.logo img {
+    max-height: 100%;
+}
+
+header {
+    background-color: rgb(61, 37, 10);  
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Wie kann ich die Navigationsleiste vertikal ausrichten Align-items macht hier nichts...? */
+
+.nav li {
+    list-style: none;
+    font-size: 15px;
+}
+
+#mainimage {
+    background-image: url(../images/frontpage.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;    
+}
+
+.maintext {
+    text-align: center;
+}
+
+/* --------------------main------------------- */
+
+.boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Was muss ich tun, um die Buttons am Ende von "threeboxes" in einer Linie auszurichten? */
+/* Warum brauche ich manchmal text-align? */
+
+#herosection {
+    background-image: url(../images/hintergrund.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+
+    /* für Parallax-Scrolling Effekt */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.herotext > p {
+    color:  white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+}
+
+/* --------------------footer------------------- */
+
+footer {
+    background-color: rgb(61, 37, 10);
+}
+
+footer div.row {
+    padding: 5px;
+}
+
+footer .nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+footer .nav li {
+    margin-right: 20px;
+}
+
+footer .col-6.cc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.copyright p {
+    color: white;
+}
+
+
+@media screen and (max-width:  768px) {  /* kleiner als ... px */
+
+    header .nav {
+        flex-wrap: wrap;
+    }
+
+    .imagebox {
+        order: 1;
+    }
+
+    .textbox {
+        order: 2;
+    }
+}
