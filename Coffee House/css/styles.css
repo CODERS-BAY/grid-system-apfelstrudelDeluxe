@@ -15,6 +15,7 @@ p {
     color: black;
     font-size: 15px;
     margin: 0;
+    padding-bottom: 15px;
 }
 
 a {
@@ -31,7 +32,7 @@ h1 {
 }
 
 h2 {
-    color:  rgb(61, 37, 10);
+    color:  #3C1518;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -42,21 +43,22 @@ img {
 
 .button {
     color: white;
-    background-color: rgb(61, 37, 10);
+    background-color: #3C1518;
     text-transform: uppercase;
     display: table;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 /* --------------------header------------------- */
 
 .logo img {
-    max-height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 header {
-    background-color: rgb(61, 37, 10);  
+    background-color: #3C1518;  
 }
 
 header .nav {
@@ -65,11 +67,22 @@ header .nav {
     align-items: center;
 }
 
-/* Wie kann ich die Navigationsleiste vertikal ausrichten Align-items macht hier nichts...? */
+div.col-6.navflexlogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.col-6.navflex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .nav li {
     list-style: none;
     font-size: 15px;
+    padding: 0 15px;
 }
 
 #mainimage {
@@ -87,15 +100,13 @@ header .nav {
 
 /* --------------------main------------------- */
 
-.boxes {
+div.col-4.boxes {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
 }
-
-/* Was muss ich tun, um die Buttons am Ende von "threeboxes" in einer Linie auszurichten? */
-/* Warum brauche ich manchmal text-align? */
 
 #herosection {
     background-image: url(../images/hintergrund.jpg);
@@ -119,10 +130,21 @@ header .nav {
     text-shadow: 4px 4px 4px black;
 }
 
+.button.left {
+    margin: 20px 0;
+}
+
+div.col-8.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 /* --------------------footer------------------- */
 
 footer {
-    background-color: rgb(61, 37, 10);
+    background-color: #3C1518;
 }
 
 footer div.row {
@@ -147,6 +169,7 @@ footer .col-6.cc {
 
 .copyright p {
     color: white;
+    padding: 0;
 }
 
 
