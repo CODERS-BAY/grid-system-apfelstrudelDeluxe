@@ -94,6 +94,15 @@ div.col-6.navflex {
     align-items: center;    
 }
 
+#mainimage2 {
+    background-image: url(../images/frontpage.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    align-items: center;    
+}
+
 .maintext {
     text-align: center;
 }
@@ -106,6 +115,18 @@ div.col-4.boxes {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+}
+
+div.col-3.boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+div.col-3.boxes img {
+    max-width: 100px;
 }
 
 #herosection {
@@ -130,6 +151,11 @@ div.col-4.boxes {
     text-shadow: 4px 4px 4px black;
 }
 
+.herotext2 > p {
+    color:  white;
+    text-align: left;
+}
+
 .button.left {
     margin: 20px 0;
 }
@@ -138,6 +164,20 @@ div.col-8.textbox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.hgpink {
+    background-color: #aa8a8c;
+    padding: 1rem;
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hgpink h2, .hgpink p{
+    color: white;
+    padding-top: 15px;
 }
 
 
